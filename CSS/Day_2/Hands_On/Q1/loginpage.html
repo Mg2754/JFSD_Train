@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Login</title>
+        <style>
+            #backgr{
+                width: 40%;
+                height:70%;
+                background-image: url(back.jpg);
+                margin-top: 125px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-size: cover;
+                border-radius: 20px;
+            }
+            #opac{
+                width: 350px;
+                height:70%;
+                background-color:grey;
+                border: 2px solid;
+                opacity: 0.5;
+                border-radius: 20px;
+            }
+            #log{
+                position: absolute;
+
+            }
+            input{
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid white;
+            }
+            button{
+                width: 200px;
+                border-radius: 20px;
+                border: none;
+            }
+            th{
+                color: white;
+            }
+            img{
+                height: 100px;
+                width: 100px;
+                position: absolute;
+                margin-bottom: 375px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        
+        <center><div id="backgr">
+            <center>
+                <div id="opac"></div>
+            </center>
+            <img src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/avatar.svg" alt="">
+            <div id="log">
+                <table width="20%" align="Center"  height="300px">
+                    <tr><th colspan="2">Login Window</th></tr>
+                    <tr><td colspan="2"><input type="text" placeholder="Your Email"></td></tr>
+                    <tr><td colspan="2"><input type="text" placeholder="Your Password"></td></tr>
+                    <tr><th><input type="checkbox"> Agree With Terms & Condition</th></tr>
+                    <tr><td colspan="2"><button>Login</button></td></tr>
+                </table>
+            </div>
+            
+        </div></center>
+
+
+    </body>
+</html>

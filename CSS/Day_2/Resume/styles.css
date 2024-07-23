@@ -1,0 +1,26 @@
+#name{
+    border: 2px solid;
+    background-color:orange;
+    color: aliceblue;
+    
+}
+#topic{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: orange;
+}
+body{
+    width: 70vw;
+    border: 2px solid;
+    margin-left: 14vw;
+    border: 2px solid orange;
+}
+th{
+    background-color: orange;
+}
+td:nth-child(1){
+    background-color: orange;
+}
