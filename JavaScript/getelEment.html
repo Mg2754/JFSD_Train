@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>web page</title>
+        <script>
+            function calc(){
+                var a = parseInt(document.getElementById("n1").value);
+                var b = parseInt(document.getElementById("n2").value);
+                var op = document.getElementById("op").value;
+                var result ;
+
+                if(op == "add")
+                    result =(a+b);
+                if(op == "sub")
+                    result =(a-b);
+                if(op == "mul")
+                    result = (a*b);
+                if(op == "div")
+                    result = (a/b);
+
+            document.getElementById("Resultdiv").innerHTML = result;
+            }
+
+        </script>
+    </head>
+    <body>
+        enter First number <input type="text" id="n1"/>
+        <br>
+        enter second num <input type="text" id="n2"/>
+        <br>
+        Select opertaion <select name="" id="op">
+            <option value="add">Addition</option>
+            <option value="sub">Subration</option>
+            <option value="mul">Multiplication</option>
+            <option value="div">Division</option>
+        </select>
+        <br><br>
+        <button onclick="calc()">Calculate</button>
+        <br><br>
+        <div id="Resultdiv">
+
+        </div>
+    </body>
+</html>
