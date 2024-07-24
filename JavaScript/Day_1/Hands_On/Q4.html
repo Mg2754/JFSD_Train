@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Prime Number</title>
+        
+    </head>
+    <body>
+        <h2>String Methods</h2><br>
+        <div id="resultdiv1"></div><br>
+        <div id="resultdiv2"></div><br>
+        <div id="resultdiv3"></div><br>
+        <div id="resultdiv4"></div><br>
+        <div id="resultdiv5"></div><br>
+        <div id="resultdiv6"></div><br>
+        <div id="resultdiv7"></div><br>
+        <div id="resultdiv8"></div><br>
+        <div id="resultdiv9"></div><br>
+        <div id="resultdiv10"></div><br>
+        <div id="resultdiv11"></div><br>
+        <div id="resultdiv12"></div><br>
+        <div id="resultdiv13"></div><br>
+        <div id="resultdiv14"></div><br>
+        <div id="resultdiv15"></div><br>
+        
+        <script>
+            let str_len = 'qweretyuio';
+            document.getElementById("resultdiv1").innerHTML = "String Length = " + str_len.length;
+            let Char_at = "Hello";
+            document.getElementById("resultdiv2").innerHTML = "Char At = " + Char_at.charAt(2);
+            let Str_slice = "Hello Baiya"
+            document.getElementById("resultdiv3").innerHTML = "String Slice = " + Str_slice.slice(2,6);
+            let Sub_string = "HEllo dog Hello Cat";
+            document.getElementById("resultdiv4").innerHTML = "Sub_string = " + Sub_string.substring(2,7);
+            let Sub_str = "Hello navbar";
+            document.getElementById("resultdiv5").innerHTML = "Sub_str= " + Sub_str.substr(2,5);
+            let Toupper = "helloo";
+            document.getElementById("resultdiv6").innerHTML = "To Upper = " + Toupper.toUpperCase();
+            let Tolower = "HELLO";
+            document.getElementById("resultdiv7").innerHTML = "To Lower = " + Tolower.toLowerCase();
+            let str1 = "Hello";
+            let str2 = "World";
+            let concat = str1.concat(str2);
+            document.getElementById("resultdiv8").innerHTML = "Concatenate = " + concat;
+            let trim = "     Hello";
+            document.getElementById("resultdiv9").innerHTML = "Trimming = " + trim.trim();
+            let trim_strt = "       hello      ";
+            document.getElementById("resultdiv10").innerHTML = "trim Start = " + trim_strt.trimStart();
+            let trim_end = "      hello      ";
+            document.getElementById("resultdiv11").innerHTML = "Trim End = " + trim_end.trimEnd();
+            let rep = "5";
+            document.getElementById("resultdiv12").innerHTML = "Repeat = " + rep.repeat(4);
+            let reple = "hello java hello world";
+            document.getElementById("resultdiv13").innerHTML = "Replace = " + reple.replace('hello','hii');
+            let repleall = "hello java hello world";
+            document.getElementById("resultdiv14").innerHTML = "Replace all = " + reple.replaceAll('hello','hii');
+            let spli = "a,c,v,g,y,u";
+            document.getElementById("resultdiv15").innerHTML = "Split = " + spli.split(',');
+        </script>
+
+        <br>
+    </body>
+</html>

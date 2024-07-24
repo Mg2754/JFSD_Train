@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            function palindrome(){
+                var a = document.getElementById("num").value;
+                var res = a.split('');
+                rev = res.reverse();
+                res = rev.join('');
+                if(res == a)
+                    document.getElementById("resultdiv").innerHTML= a + ' is a palindrome';
+                else
+                    document.getElementById("resultdiv").innerHTML = a + ' not a palindrome';
+            }
+        </script>
+    </head>
+    <body>
+        Enter a number <input type="text" id="num">
+        <button id="calc" onclick="palindrome()">Calculate</button>
+        <div id="resultdiv"></div>
+    </body>
+</html>

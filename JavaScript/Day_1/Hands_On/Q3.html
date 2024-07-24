@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Prime Number</title>
+        <script>
+            function pattern(){
+                var a = document.getElementById("n1").value;
+                var res = '';
+                    for(let i=0;i<a;i++){
+                        for(let j=0;j<i+1;j++){
+                            res += '* ';
+                        }
+                        res += '<br>';
+                    }
+                document.getElementById("result").innerHTML = res;
+            }
+        </script>
+    </head>
+    <body>
+        Enter a number <input type="number" id="n1">
+        <br><br>
+        <button id="check" onclick="pattern()"> Check</button><br><br>
+        <div id ="result"></div>
+    </body>
+</html>
