@@ -1,0 +1,24 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            const sum = () => 10+20;
+            document.write("<br> Add : "+ sum());
+            const sub = (x,y) => x-y;
+            document.write("<br> Sub : "+ sub(10,5));
+            const mul = (x,y) => {return x*y};
+            document.write("<br> Multiplication : "+ mul(10,5));
+            const big = (x) => {
+                var fact = 1;
+                for(let i=1;i<=x;i++){
+                    fact *= i;
+                }
+                return fact;
+            };
+            document.write("<br>Big : " + big(4)); 
+            
+        </script>
+    </body>
+</html>
