@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"></script>
+    <style>
+        #calc{
+            width: 40vw;
+            height: 60vh;
+            background-color: grey;
+
+        }
+        th{
+            border: 2px solid;
+            background-color: white;
+        
+        }
+        input{
+            background-color: white;
+            width: 90%;
+            height: 80%;
+            border: 2px solid black;
+            font-size: 20px;
+        }
+        table{
+            
+            background-color: grey;
+            border: 2px solid black;
+        }
+        tr,td{
+            border: 2px solid;
+        }
+        button{
+            background-color: aqua;
+            width: 90%;
+            height: 90%;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+        #display{
+            background-color: gray;
+            
+        }
+    </style>
+    <script>
+        var str = '';
+        function dis(num){
+            str += num;
+            if(num == 'cl'){
+                str = '';
+            }
+            document.getElementById("inp").value = str;
+        }
+        function cal(){
+            try{
+            var sol = eval(str);
+            document.getElementById("inp").value=sol;
+        }
+            catch(e){
+            document.getElementById("inp").value="Error";
+        }
+    }
+        function backspace(){
+            str = str.slice(0,-1);
+            document.getElementById("inp").value = str;
+
+        }
+
+        
+
+    </script>
+</head>
+<body>
+    <center><h1>Calculator</h1></center>
+    <table  width="300px" height="400px" id="calc" align="center">
+        <tr><th colspan="4" id="display"><input type="text" placeholder="0" id="inp"></th></tr>
+        <tr align="center">
+            <td><button onclick="dis('cl')">c</button></td>
+            <td><button onclick="dis('/100*,%')">%</button></td>
+            <td><button onclick="backspace()"><=</button></td>
+            <td><button onclick="dis('/')">/</button></td></tr>
+            <tr align="center">
+                <td><button onclick="dis('7')">7</button></td>
+                <td><button onclick="dis('8')">8</button></td>
+                <td><button onclick="dis('9')">9</button></td>
+                <td><button onclick="dis('*')">*</button></td></tr>
+                <tr align="center">
+                    <td><button onclick="dis('4')">4</button></td>
+                    <td><button onclick="dis('5')">5</button></td>
+                    <td><button onclick="dis('6')">6</button></td>
+                    <td><button onclick="dis('-')">-</button></td></tr>
+                    <tr align="center">
+                        <td><button onclick="dis('1')">1</button></td>
+                        <td><button onclick="dis('2')">2</button></td>
+                        <td><button onclick="dis('3')">3</button></td>
+                        <td><button onclick="dis('+')">+</button></td></tr>
+                        <tr align="center">
+                            <td><button onclick="dis('00')">00</button></td>
+                            <td><button onclick="dis('0')">0</button></td>
+                            <td><button onclick="dis('.')">.</button></td>
+                            <td><button onclick="cal()">=</button></td></tr>
+                                        
+    </table>
+</body>
+</html>
