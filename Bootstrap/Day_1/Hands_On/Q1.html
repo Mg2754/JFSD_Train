@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title> Web Page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <style>
+            #login{
+                border: 2px solid skyblue;
+                height: 45vh;
+                width: 40vw;
+                margin:100px;
+                border-radius:10px ;
+            }
+            #top{
+                font-size: 15px;
+                background-color: skyblue;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            .input-cont{
+                margin: 40px;
+                border: 2px solid;
+                max-width: fit-content;
+                background-color: rgb(238, 238, 238);
+            }
+            .input-field{
+                padding: 5px;
+                border-left: 2px solid;
+            }
+            .icon{
+                padding: 10px;
+            }
+            .chk-box{
+                max-width:none;
+                margin: 40px;
+                border-bottom: 2px solid;
+            }
+            #signup{
+                margin: 40px;
+            }
+            #badge{
+                background-color: skyblue;
+            }
+    
+        </style>
+    </head>
+    <body >
+        <div id="login">
+        <p id="top" class="list-group-item"><b>Sign In</b> <span id="badge" class=" btn badge">Forget Password</span></p>
+        <div class="input-cont">
+            <i class="fa fa-user icon"></i>
+            <input class="input-field" type="text" placeholder="Username or email" name="usrnm" >
+          </div>
+          <div class="input-cont">
+            <i class="fa fa-lock icon"></i>
+            <input class="input-field" type="text" placeholder="Password" name="usrnm" >
+          </div>
+          <div class="chk-box" >
+            <p><input type="checkbox" name="" id=""><b> Remember Me</b> </p>
+            <button class="btn btn-success">Login</button> <button class="btn btn-primary">Login With Facebook</button>
+            <br><br>
+          </div>
+          <div id="signup">
+            <p>Don't have an account <a href="">Sign Up Here</a></p>
+          </div>
+        </div>
+    </body>
+</html>
