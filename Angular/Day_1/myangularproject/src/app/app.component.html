@@ -1,0 +1,27 @@
+<!-- <app-child></app-child> -->
+ <h1>Interpolation Eg</h1>
+ <b>
+  My Name : {{name}}
+  <br>
+  My age : {{age}}
+  <br>
+  Addition : {{getadd(10,20)}}
+ </b>
+
+ <font [color]="txtcolor">
+ <h1>Property Binding Example</h1>
+ <b>
+  My Name : <input type="text" [value]="name" />
+  <br>
+  My age : <input type="text" [value]="age" />
+  <br>
+  Addition : <input type="text" [value]="getadd(10,30)">
+ </b>
+</font>
+
+<h1>Event Binding Example</h1>
+<button (click)="changename()">changename</button>
+<br>
+<img [src]="imgpath" alt="" width="200" height="200">
+<br>
+<button (click)="changeimg()">Changeimage</button>
