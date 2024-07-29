@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snapdeal</title>
+    <style>
+        #topdiv{
+            height: 30px;
+            background-color: rgb(255, 0, 60);
+            display: flex;
+            color: aliceblue;
+            font-size: 12px;
+            padding: 5px;
+        }
+        #top-right{
+            display: flex;
+        }
+        #top2{
+            height: 70px;
+            background-color:rgb(254,35,65);
+        }
+        #sidenav{
+            margin-top: 20px;
+            width: fit-content;
+            height: fit-content;
+            box-shadow: 2px 2px 5px 5px grey;
+            margin-left: 80px;
+            margin-left: 0px;
+        }
+        #content{
+            border: 2px solid;
+            height: fit-content;
+            width: max-content;
+            margin-top: 20px;
+            display: flex;
+        }
+        .list-group-item{
+            border: none;
+        }
+        #topna,#top1{
+            border: none;
+            height: 40px;
+            border-left: 2px solid white;
+        }
+        #image{
+            width: 30px;
+            padding: 2px;
+        }
+        #imagesr{
+            width: 12px;
+        }
+        #topna:hover,#top1:hover{
+            border-left: 2px solid rgb(228,0,70);
+        }
+        #slide-show{
+            border: 2px solid;
+            width: 1250px;
+            height: 300px;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        #right-bar{
+            border: 2px solid;
+            width: 200px;
+            height: 300px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        #slide-bar{
+            border: 2px solid;
+            
+        }
+        #card-div{
+            height: max-content;
+            margin-left: 20px;
+            width: 98%;
+        }
+        #cards{
+            width: 223px;
+
+        }
+        #cards:hover{
+            box-shadow: 2px 2px 4px 4px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header >
+        <div id="topdiv" class="container-fluid">
+            <div style="margin-left: 100px;" >
+            <div id ><p>Brand Walli Quality,Buzzae Walli Deal!</p></div>
+            </div>
+        </div>
+        <div id="top2" class="container-fluid">
+            <div style="margin-left: 100px; display: flex;">
+                <img id="snap" src="Snapdeal_logo_new.png" alt="" height="70px">
+                <div style="padding: 13px; display: flex;"><input  type="text" placeholder="Search Products & brands" style="width:600px; height: 40px;" > <button type="button"  style="background-color: black; height: 40px; width: 130px;"><span class="glyphicon glyphicon-search" style="color: aliceblue;"> Search</span> </button></div>
+                <button style="width: 100px; background-color:rgb(254,35,65)  ; color: aliceblue; border: none; margin-left: 250px;">Cart <span class="glyphicon glyphicon-shopping-cart" style="color: aliceblue;"></span></button>
+                <button style="width: 100px; background-color:rgb(254,35,65)  ; color: aliceblue; border: none; ">Signin <span class="glyphicon glyphicon-user"></span></button>  
+            </div>
+        </div>
+    </header>
+    <div class="container" id="content">
+        <ul id="sidenav" type="none" class="list-group">
+            <li class="list-group-item dropdown-header" style="height: 30px;">TOP CATEGORIES</li>
+            <li class="list-group-item" id="topna"><img src="https://n1.sdlcdn.com/imgs/k/v/x/Men_sitenavigation-b972a.jpg" alt="" id="image"> Men's Fashion</li>
+            <li class="list-group-item" id="topna"><img src="https://n1.sdlcdn.com/imgs/k/v/x/WoMen_sitenav-5a8ca.jpg" alt="" id="image"> Women's Fashion</li>
+            <li class="list-group-item" id="topna"><img src="https://n1.sdlcdn.com/imgs/k/v/x/HOme_sitenavigation-d7a00.jpg" alt="" id="image"> Home & Kitchen</li>
+            <li class="list-group-item" id="topna"><img src="https://n4.sdlcdn.com/imgs/k/v/x/Toys_Sitenavigation-ef666.jpg" alt="" id="image"> Toys,Kids</li>
+            <li class="list-group-item" id="topna"><img src="https://n2.sdlcdn.com/imgs/k/v/x/Beauty_Site_navigation-5f3be.jpg" alt="" id="image"> Beauty Health</li>
+            <br>
+            <li class="list-group-item dropdown-header" style="border: none;"> MORE CATEGORIES</li>
+            <li class="list-group-item" id="top1"> Automotives</li>
+            <li class="list-group-item" id="top1"> Mobile&Accesories</li>
+            <li class="list-group-item" id="top1"> Electronics</li>
+            <li class="list-group-item" id="top1"> Sports Fitness&Outdoor</li>
+            <li class="list-group-item" id="top1">Computers&Gaming</li>
+            <li class="list-group-item" id="top1">Book Media&Music</li>
+            <li class="list-group-item" id="top1">Hobbies</li>
+            <br>
+            <li class="list-group-item dropdown-header" style="border: none;">TRENDING SEARCHES</li>
+            <li class="list-group-item" id="top1"><img src="https://i1.sdlcdn.com/img/faqImage/Search.png" alt="" id="imagesr"> Kitchen Product</li>
+            <li class="list-group-item" id="top1"><img src="https://i1.sdlcdn.com/img/faqImage/Search.png" alt="" id="imagesr"> Shoes For Men</li>
+            <li class="list-group-item" id="top1"><img src="https://i1.sdlcdn.com/img/faqImage/Search.png" alt="" id="imagesr"> Kurti Set</li>
+            <li class="list-group-item" id="top1"><img src="https://i1.sdlcdn.com/img/faqImage/Search.png" alt="" id="imagesr"> Sandal Men</li>
+            <li class="list-group-item" id="top1"><img src="https://i1.sdlcdn.com/img/faqImage/Search.png" alt="" id="imagesr"> Sports Shoe Men</li>
+        </ul>
+        <div class="conatiner" style="display: flex; height: max-content; flex-direction: column;" >
+            <div class="conatiner" style="display: flex; height: max-content;">
+                <div id="slide-show" ><img src="https://n2.sdlcdn.com/imgs/k/s/i/ethnicwear-ef4d9.jpg" alt="" width="100%" height="100%"></div>
+                <div id="right-bar" class="card" style="width: 200px;">
+                    <img src="" alt="" class="card-image-top" style="width:100%;">
+                </div>
+            </div>
+            <div id="card-div" class="container" style="margin-top: 20px;">
+                <div style="display: flex; font-size: 20px;">TRENDING PRODUCTS</div>
+                <div id="cardcollection" style="display: flex; flex-direction: row; width: max-content; box-shadow: 0.5px 0.5px 2px 2px grey"> 
+                <div style="padding: 10px;">  
+                    <div id="cards" class="card" >
+                        <img src=" 	https://t1.sdlcdn.com/imgs/i/n/r/large/bhawna-collection-Loard-Shiv-Trishul-SDL890408077-1-86933.jpeg" alt="" class="card-image-top" style="width: 100%;">
+                        <div class="card-body">
+                            <p>Shiv Trishul Damru Gold-plated Locket with Rudraksha Mala</p>
+                            <div><strike class="drop">RS 399</strike> <b><span>RS.142</span></b> &emsp13;<span>54%OFF</span></div>
+                        </div>
+                    </div> </div>
+                    <div style="padding: 10px;"><div class="card" id="cards" >
+                        <img src=" 	https://t1.sdlcdn.com/imgs/i/n/r/large/bhawna-collection-Loard-Shiv-Trishul-SDL890408077-1-86933.jpeg" alt="" class="card-image-top" style="width: 100%;">
+                        <div class="card-body">
+                            <p>Shiv Trishul Damru Gold-plated Locket with Rudraksha Mala</p>
+                            <div><strike class="drop">RS 399</strike> <b><span>RS.142</span></b> &emsp13;<span>54%OFF</span></div>
+                        </div>
+                    </div></div>
+                    <div style="padding: 10px;"><div id="cards" class="card">
+                        <img src=" 	https://t1.sdlcdn.com/imgs/i/n/r/large/bhawna-collection-Loard-Shiv-Trishul-SDL890408077-1-86933.jpeg" alt="" class="card-image-top" style="width: 100%;">
+                        <div class="card-body">
+                            <p>Shiv Trishul Damru Gold-plated Locket with Rudraksha Mala</p>
+                            <div><strike class="drop">RS 399</strike> <b><span>RS.142</span></b> &emsp13;<span>54%OFF</span></div>
+                        </div>
+                    </div></div>
+                    <div style="padding: 10px;"><div id="cards" class="card">
+                        <img src=" 	https://t1.sdlcdn.com/imgs/i/n/r/large/bhawna-collection-Loard-Shiv-Trishul-SDL890408077-1-86933.jpeg" alt="" class="card-image-top" style="width: 100%;">
+                        <div class="card-body">
+                            <p>Shiv Trishul Damru Gold-plated Locket with Rudraksha Mala</p>
+                            <div><strike class="drop">RS 399</strike> <b><span>RS.142</span></b> &emsp13;<span>54%OFF</span></div>
+                        </div>
+                    </div></div>
+                    <div style="padding: 10px;"><div id="cards" class="card">
+                        <img src=" 	https://t1.sdlcdn.com/imgs/i/n/r/large/bhawna-collection-Loard-Shiv-Trishul-SDL890408077-1-86933.jpeg" alt="" class="card-image-top" style="width: 100%;">
+                        <div class="card-body">
+                            <p>Shiv Trishul Damru Gold-plated Locket with Rudraksha Mala</p>
+                            <div><strike class="drop">RS 399</strike> <b><span>RS.142</span></b> &emsp13;<span>54%OFF</span></div>
+                        </div>
+                    </div></div>
+                    <div style="padding: 10px;"><div id="cards" class="card">
+                        <img src=" 	https://t1.sdlcdn.com/imgs/i/n/r/large/bhawna-collection-Loard-Shiv-Trishul-SDL890408077-1-86933.jpeg" alt="" class="card-image-top" style="width: 100%;">
+                        <div class="card-body">
+                            <p>Shiv Trishul Damru Gold-plated Locket with Rudraksha Mala</p>
+                            <div><strike class="drop">RS 399</strike> <b><span>RS.142</span></b> &emsp13;<span>54%OFF</span></div>
+                        </div>
+                    </div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
