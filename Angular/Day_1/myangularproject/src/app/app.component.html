@@ -1,5 +1,5 @@
 <!-- <app-child></app-child> -->
- <h1>Interpolation Eg</h1>
+ <!-- <h1>Interpolation Eg</h1>
  <b>
   My Name : {{name}}
   <br>
@@ -25,3 +25,28 @@
 <img [src]="imgpath" alt="" width="200" height="200">
 <br>
 <button (click)="changeimg()">Changeimage</button>
+<br>
+<h1>Two way Data Binding</h1>
+Enter First Name: <input type="text" [(ngModel)]="fname"/>
+<br>
+Welcome {{fname}} -->
+
+<h1>Angular Structural Directives</h1>
+<br>
+<button (click)="changeflag()">Show Or hide</button>
+<br><br>
+<div *ngIf="flag" [ngStyle]="mystyle">
+    <ul>
+        <li *ngFor="let vec of vehicles" (click)="selected_item(vec)">{{vec}}</li>
+    </ul>
+    <button (click)="changecolor()">Change Color</button>
+    <h3 [ngClass]="myclass">You have Selected :{{selected_vec}}</h3>
+    <br>
+    <div [ngSwitch]="selected_vec">
+        <font *ngSwitchCase="'TwoWheel'">Bike</font>
+        <font *ngSwitchCase="'ThreeWheel'">Auto</font>
+        <font *ngSwitchCase="'FourWheel'">Car</font>
+        <font *ngSwitchDefault>Invalid</font>
+    
+    </div>
+</div>

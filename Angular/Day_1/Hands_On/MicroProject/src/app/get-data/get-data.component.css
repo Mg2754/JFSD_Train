@@ -1,0 +1,15 @@
+#content{
+    width: 40vw;
+    height: 40vh;
+}
+tr input,tr select{
+    width: 15vw;
+    height: 3vh;
+}
+tr{
+    font-size: 2vh;
+}
+#main-div{
+    box-shadow: 2px 2px 4px 4px;
+    padding: 10px;
+}
