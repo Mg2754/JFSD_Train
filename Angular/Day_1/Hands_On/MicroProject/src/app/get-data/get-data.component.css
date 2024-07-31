@@ -13,3 +13,6 @@ tr{
     box-shadow: 2px 2px 4px 4px;
     padding: 10px;
 }
+#buttons{
+    width: 40vw;
+}
