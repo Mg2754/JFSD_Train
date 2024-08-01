@@ -1,6 +1,6 @@
 #content{
-    width: 40vw;
-    height: 40vh;
+    width: max-content;
+    height: max-content;
 }
 tr input,tr select{
     width: 15vw;
@@ -15,4 +15,7 @@ tr{
 }
 #buttons{
     width: 40vw;
+}
+#select{
+    height: 4vh;
 }

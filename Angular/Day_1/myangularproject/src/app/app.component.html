@@ -31,7 +31,7 @@ Enter First Name: <input type="text" [(ngModel)]="fname"/>
 <br>
 Welcome {{fname}} -->
 
-<h1>Angular Structural Directives</h1>
+<!-- <h1>Angular Structural Directives</h1>
 <br>
 <button (click)="changeflag()">Show Or hide</button>
 <br><br>
@@ -49,4 +49,11 @@ Welcome {{fname}} -->
         <font *ngSwitchDefault>Invalid</font>
     
     </div>
-</div>
+</div> -->
+
+<div>
+    <br>{{ arr1 }}
+    <br><br>{{ arr1 | sort: 'reverse' }}
+    <br><br>{{ arr1 | sort: 'ascending' }}
+    <br><br>{{ arr1 | sort: 'descending' }}
+</div>    

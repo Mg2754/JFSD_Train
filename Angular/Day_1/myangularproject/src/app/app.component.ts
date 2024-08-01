@@ -50,6 +50,8 @@ export class AppComponent {
   mystyle:{};
   myclass:string;
 
+  arr1:number[]=[3,4,5,2,6];
+
 constructor(){
   this.flag=true;
   this.vehicles=["Twowheel","ThreeWheel","FourWheel"]
