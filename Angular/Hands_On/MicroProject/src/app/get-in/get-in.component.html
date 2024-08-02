@@ -1,5 +1,4 @@
 
-<h1>Employee Management System</h1>
 <div class="container">
 <div class="row justify-content-center">
     <div class="col-md-10">
@@ -14,15 +13,14 @@
                                 #empId="ngModel" ngModel
                                 required
                                 pattern="[0-9]+"
-
                                 />
                     </div>
                     <div *ngIf="empId.touched">
                         <div *ngIf="empId.errors?.['required']">
-                            <font><b style="color: red;">Vehicle ID required.</b></font>
+                            <font><b style="color: red;">Employee ID required.</b></font>
                         </div>
                         <div *ngIf="empId.errors?.['pattern']">
-                            <b style="color: red;">Invalid Vehicle Id.</b>
+                            <b style="color: red;">Invalid Emp Id.</b>
                         </div>
                     </div>
 
@@ -48,7 +46,7 @@
                                 />
                     </div>
                                                     
-                    <button class="btn btn-success" (click)="insertEmployee(myForm.value)">
+                    <!-- <button class="btn btn-success" (click)="insertEmployee(myForm.value)">
                         Insert 
                     </button>
                 &nbsp;&nbsp;
@@ -64,12 +62,12 @@
                     &nbsp;&nbsp;
                     <button class="btn btn-info" (click)="findAllEmployee()">
                         Find All
-                    </button>
+                    </button> -->
                 </form>
             </div>
         </div>
     </div>
-    <h3>{{result}}</h3>
+    <!-- <h3>{{result}}</h3>
     <div style="width: 100%;" *ngIf="flag">
         <table width="80%" align="center" class="table table-borderd">
          <tr><th>Employee Id</th><th>Employee Name</th><th>Employee Salary</th></tr> 
@@ -77,7 +75,7 @@
               <td> {{emp.id}} </td><td> {{emp.empName}} </td><td> {{emp.empSalary}} </td>
           </tr>
        </table>
-       </div>
+       </div> -->
          
     
 

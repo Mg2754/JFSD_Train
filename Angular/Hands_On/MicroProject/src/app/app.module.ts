@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { GetDataComponent } from './get-data/get-data.component';
 import { DisplayDataComponent } from './display-data/display-data.component';
 import { FormsModule } from '@angular/forms';
+import { GetInComponent } from './get-in/get-in.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GetDataComponent,
     DisplayDataComponent,
+    GetInComponent,
   ],
   imports: [
     BrowserModule,
