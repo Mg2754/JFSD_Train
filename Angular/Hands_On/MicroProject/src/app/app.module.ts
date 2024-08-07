@@ -1,27 +1,26 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GetDataComponent } from './get-data/get-data.component';
-import { DisplayDataComponent } from './display-data/display-data.component';
 import { FormsModule } from '@angular/forms';
-import { GetInComponent } from './get-in/get-in.component';
+import { VehicleService } from './vehicle.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GetDataComponent,
-    DisplayDataComponent,
-    GetInComponent,
+    GetDataComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
-    provideClientHydration()
+    VehicleService
   ],
   bootstrap: [AppComponent]
 })

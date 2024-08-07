@@ -38,7 +38,7 @@ export class EmpserviceService {
   }
 
   findEmployee(empId : number){
-    this.http.get<Employee[]>(this.url+"/"+empId).subscribe(data => this.employee = data)
+    this.http.get<Employee>(this.url+"/"+empId).subscribe(data => this.employee = data)
     return this.employee;
   }
 
