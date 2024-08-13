@@ -1,0 +1,28 @@
+package hands_on;
+
+class Rectangle{
+	int height;
+	int width;
+	int Area;
+	
+	Rectangle(int height,int width){
+		this.height = height;
+		this.width = width;
+	}
+	int calArea(){
+		Area = (height*width);	
+		return Area;
+	}
+	void calPerimeter() {
+		int Perimeter = (height + width) * 2;
+	}
+	
+}
+
+public class Q3 {
+	Rectangle obj = new Rectangle(10,10);
+	
+	System.out.println("");
+	
+
+}
